@@ -19,7 +19,7 @@
 	.clearFloat{display: block; content: "" ; clear: both;}
 	.comp p{float:left; font-size: 14px; color: #888; line-height: 40px;}
 	</style>
-	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=F8GGZGTAevRPL7BwLtTjQvEzdAlpzqTt"></script>
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=F8GGZGTAevRPL7BwLtTjQvEzdAlpzqTt"></script>
 	
 	<title>地图</title>
 </head>
@@ -30,18 +30,18 @@
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("allmap");    // 创建Map实例
-	map.centerAndZoom(new BMap.Point(120.543905,31.271141), 17);  // 初始化地图,设置中心点坐标和地图级别	
+	map.centerAndZoom(new BMap.Point(120.211006,30.330179), 17);  // 初始化地图,设置中心点坐标和地图级别	
 	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
-	var point = new BMap.Point(120.543905,31.271141);
+	var point = new BMap.Point(120.211006,30.330179);
 	var marker = new BMap.Marker(point);  // 创建标注
 	map.addOverlay(marker);              // 将标注添加到地图中
 	map.centerAndZoom(point, 17);
 	var opts = {
 	  width : 200,     // 信息窗口宽度
 	  height: 100,     // 信息窗口高度
-	  title : "苏州成飞物流有限公司" , // 信息窗口标题
+	  title : "杭州成飞物流有限公司" , // 信息窗口标题
 	}
-	var infoWindow = new BMap.InfoWindow("地址：苏州市吴中区木渎镇珠江南路378号", opts);  // 创建信息窗口对象 
+	var infoWindow = new BMap.InfoWindow("地址：杭州市拱墅区储鑫路45号", opts);  // 创建信息窗口对象 
 	map.openInfoWindow(infoWindow,point);//初始开启信息窗口
 	marker.addEventListener("click", function(){//按钮点击开启信息窗口
 		map.openInfoWindow(infoWindow,point); 
