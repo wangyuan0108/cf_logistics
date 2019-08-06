@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://chengfei.netlify.com/sitemap.xml
